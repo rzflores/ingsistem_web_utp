@@ -1,0 +1,286 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistemas Web</title>
+
+    
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="../materialize/materialize.min.css">
+  
+  <!-- video js -->
+  <link
+  href="https://unpkg.com/video.js@7/dist/video-js.min.css"
+  rel="stylesheet"
+/>
+
+<!-- animated css -->
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  
+
+</head>
+<body>
+ <!-- lottie js -->
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<!-- chartjs -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
+
+ <!-- scroolreveal js-->
+ <script src="https://unpkg.com/scrollreveal"></script>
+
+<!-- navbar -->
+
+
+  <nav>
+    <div class="nav-wrapper">
+      <a href="../index.html" class="brand-logo"><i class="large material-icons">desktop_windows</i></a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">        
+        <li><a href="../Pages/cursos.html">Cursos</a></li>
+        <li><a  class="modal-trigger" href="#modalAreasGrafico">Areas</a></li>
+        <li><a  class="modal-trigger" href="#modalVideo">Video</a></li>
+      </ul>
+      <ul  class="side-nav" id="mobile-demo">        
+        <li><a href="../Pages/cursos.html">Cursos</a></li>
+        <li><a  class="modal-trigger" href="#modalAreasGrafico">Areas</a></li>
+        <li><a  class="modal-trigger" href="#modalVideo">Video</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+
+  <!-- Modal Structure Video-->
+  <div id="modalVideo" class="modal bottom-sheet">
+    <div class="modal-content">
+      <h4>Experiencia</h4>
+      
+  <video
+  id="my-video"
+  class="video-js"
+  controls
+  preload="auto"
+  width="840"
+  height="264"
+  poster="./imagenes/videoimg.jpg"
+  data-setup="{}"
+>
+  <source src="../video/video.mp4" type="video/mp4" />
+  <!-- <source src="MY_VIDEO.webm" type="video/webm" /> -->
+  <p class="vjs-no-js">
+    Para ver este video, habilite JavaScript y considere actualizar a un
+    navegador web que
+    <a href="https://videojs.com/html5-video-support/" target="_blank"
+      >supports HTML5 video</a
+    >
+  </p>
+</video>
+    </div>
+    <div class="modal-footer">
+      <a href="./cursos.html" class="modal-close btn-large waves-effect waves-light  red">Cerrar<i class="material-icons right">close</i></a>
+    </div>
+  </div>
+
+
+  
+  <!-- Modal Structure Chart-->
+  <div id="modalAreasGrafico" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>Areas de la Carrera</h4>
+      
+  <div>
+    <canvas id="myChart"></canvas>
+  </div>
+  
+    </div>
+    <div class="modal-footer">
+      <a href="./cursos.html" class="modal-close btn-large waves-effect waves-light  red">Cerrar<i class="material-icons right">close</i></a>
+    </div>
+    </div>
+  </div>
+
+
+<div>
+  <h4  class="center-align titleReveal animate__animated animate__tada"> Malla Curricular </h4>
+</div> 
+<div class="row rowReveal animate__animated animate__bounceInDown">
+    <div class="col s12">
+  <ul class="collapsible">
+    <li>
+      <div class="collapsible-header"><i class="material-icons">code</i>Primer Semestre</div>
+      <div class="collapsible-body">
+        <ul class="collection">
+            <li class="collection-item">Alvin</li>
+            <li class="collection-item">Alvin</li>
+            <li class="collection-item">Alvin</li>
+            <li class="collection-item">Alvin</li>
+          </ul>
+      </div>
+    </li>
+    <li>
+        <div class="collapsible-header"><i class="material-icons">contacts</i>Segundo Semestre</div>
+        <div class="collapsible-body">
+          <ul class="collection">
+              <li class="collection-item">Alvin</li>
+              <li class="collection-item">Alvin</li>
+              <li class="collection-item">Alvin</li>
+              <li class="collection-item">Alvin</li>
+            </ul>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">laptop_windows</i>Tercer Semestre</div>
+        <div class="collapsible-body">
+          <ul class="collection">
+              <li class="collection-item">Alvin</li>
+              <li class="collection-item">Alvin</li>
+              <li class="collection-item">Alvin</li>
+              <li class="collection-item">Alvin</li>
+            </ul>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">settings_cell</i>Cuarto Semestre</div>
+        <div class="collapsible-body">
+          <ul class="collection">
+              <li class="collection-item">Alvin</li>
+              <li class="collection-item">Alvin</li>
+              <li class="collection-item">Alvin</li>
+              <li class="collection-item">Alvin</li>
+            </ul>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">keyboard</i>Quinto Semestre</div>
+        <div class="collapsible-body">
+          <ul class="collection">
+              <li class="collection-item">Alvin</li>
+              <li class="collection-item">Alvin</li>
+              <li class="collection-item">Alvin</li>
+              <li class="collection-item">Alvin</li>
+            </ul>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">group_work</i>Sexto Semestre</div>
+        <div class="collapsible-body">
+          <ul class="collection">
+              <li class="collection-item">Alvin</li>
+              <li class="collection-item">Alvin</li>
+              <li class="collection-item">Alvin</li>
+              <li class="collection-item">Alvin</li>
+            </ul>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">folder_open</i>Septimo Semestre</div>
+        <div class="collapsible-body">
+          <ul class="collection">
+              <li class="collection-item">Alvin</li>
+              <li class="collection-item">Alvin</li>
+              <li class="collection-item">Alvin</li>
+              <li class="collection-item">Alvin</li>
+            </ul>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">equalizer</i>Octavo Semestre</div>
+        <div class="collapsible-body">
+          <ul class="collection">
+              <li class="collection-item">Alvin</li>
+              <li class="collection-item">Alvin</li>
+              <li class="collection-item">Alvin</li>
+              <li class="collection-item">Alvin</li>
+            </ul>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">dns</i>Noveno Semestre</div>
+        <div class="collapsible-body">
+          <ul class="collection">
+              <li class="collection-item">Alvin</li>
+              <li class="collection-item">Alvin</li>
+              <li class="collection-item">Alvin</li>
+              <li class="collection-item">Alvin</li>
+            </ul>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">developer_board</i>Decimo Semestre</div>
+        <div class="collapsible-body">
+          <ul class="collection">
+              <li class="collection-item">Alvin</li>
+              <li class="collection-item">Alvin</li>
+              <li class="collection-item">Alvin</li>
+              <li class="collection-item">Alvin</li>
+            </ul>
+        </div>
+      </li>
+  </ul>
+</div>
+</div>  
+        
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+  <footer class="page-footer animate__animated animate__backInRight">
+    <div class="container">
+      <div class="row">
+        <div class="col s6 l6">
+          <h5 class="white-text">Hora</h5>
+          <p  id="hora" class="grey-text text-lighten-4">  
+        </div>
+        <div class="col s6 l6">
+          <h5 class="white-text">Links</h5>
+          <ul>            
+            <li><a class="grey-text text-lighten-3" href="../Pages/cursos.html">Cursos</a></li>
+            <li><a class="grey-text text-lighten-3 modal-trigger" href="#modalAreasGrafico">Areas</a></li>
+            <li><a class="grey-text text-lighten-3 modal-trigger" href="#modalVideo">Video</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      © 2021 Todos los derechos Resevados rzflores      
+      </div>
+    </div>
+  </footer>
+
+
+
+ <!-- Compiled and minified JavaScript -->
+ <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+ <script type="text/javascript" src="../materialize/materialize.min.js"></script>    
+
+ <!-- sweetalert2 js-->
+ <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+
+<script src="../moment/moment.js"></script>
+
+ <!-- videojs  -->
+ <script src="https://vjs.zencdn.net/7.15.4/video.min.js"></script>   
+   <script src="../script.js"></script>
+      
+</body>
+</html>
